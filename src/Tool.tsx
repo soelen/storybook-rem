@@ -1,4 +1,4 @@
-import { API, useParameter } from '@storybook/api'
+import { API, useParameter } from '@storybook/manager-api'
 import { IconButton, WithTooltip, TooltipLinkList } from '@storybook/components';
 import { DOCS_RENDERED } from '@storybook/core-events';
 
@@ -160,7 +160,7 @@ const Tool: FunctionComponent<Props> = ( { api }) => {
           }, state )
           return <TooltipLinkList links={list} />;
         }}
-        closeOnClick
+        closeOnOutsideClick
       >
         <IconButton
           title="Change root font size"
