@@ -1,4 +1,4 @@
-import { addons, types } from '@storybook/addons';
+import { addons, types } from '@storybook/manager-api';
 import * as React from 'react';
 import { ADDON_ID, TOOLBAR_ID } from '../constants';
 
